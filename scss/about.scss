@@ -1,0 +1,48 @@
+.about {
+    margin-top: 110px;
+    margin-bottom: 180px;
+    max-width: 980px;
+    margin: 0 auto;
+
+    span {
+      background-color: #79addc;
+      border-radius: 20px;
+      color: #fff;
+      padding: 11px 21px;
+      border: none;
+      font-size: small;
+    align-items: center;
+    justify-content: center;
+
+      a {
+          text-decoration: none;
+      color: white;
+      }
+  }
+  
+    .about-header {
+      h1 {
+        margin-bottom: 2px;
+      }
+      .border-bottom {
+        width: 97px;
+        height: 2px;
+        background-color: #000;
+        margin-bottom: 16px;
+      }
+    }
+  }
+
+  @media (max-width: 860px) {
+    .about {
+            flex-direction: column;
+           justify-content: space-between;
+           align-items: left;
+        }
+
+        .about-header {
+          flex-direction: column;
+           justify-content: space-between;
+           align-items: left;
+        }
+    }

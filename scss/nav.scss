@@ -1,0 +1,50 @@
+.nav-holder {
+    position: absolute;
+    top: 0;
+    z-index: 99;
+    width: 100%;
+    
+    nav {
+       width: $site-nav-width; 
+       height: $site-nav-height;
+       margin: 0 auto;
+       border-bottom: solid 2px;
+       color: black;
+
+       .words {
+        margin: auto;
+        text-align: center;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        color: black;
+        text-decoration: none;
+
+        .logo {
+            width: 92px;
+            height: 42px;
+            outline: 2px solid black;
+            display: flex;
+            align-items: center;
+            justify-content: space-evenly;
+            }
+
+        a {
+            text-decoration: none;
+            color: black;
+            
+        }
+    }
+    }
+}
+
+@media (max-width: 860px) {
+    .nav-holder {
+
+        .words {
+            flex-direction: column;
+           justify-content: space-between;
+           align-items: left;
+        }
+    }
+}
